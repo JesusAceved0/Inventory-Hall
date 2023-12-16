@@ -21,7 +21,7 @@ namespace Inventory_Hall
         {
             // Retrieve the connection string from the configuration file
 
-            string connectionString = ConfigurationManager.ConnectionStrings["InventoryHall"].ConnectionString;
+            string connectionString = ConfigurationManager.ConnectionStrings["InventoryHall"].ConnectionString + ";Encrypt=True;TrustServerCertificate=True;"; connection = new SqlConnection(connectionString);
             // Create a new SqlConnection using the retrieved connection string
 
             connection = new SqlConnection(connectionString);

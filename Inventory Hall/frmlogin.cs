@@ -24,7 +24,7 @@ namespace Inventory_Hall
 
         private void loginbtn_Click(object sender, EventArgs e)
         {
-            if (usuariotxt.Text == "steven" && maskedcon.Text == "0785")
+            if (usuariotxt.Text == "jesus" && maskedcon.Text == "2020")
             {
                 DialogResult = DialogResult.OK; // Set the DialogResult to OK
                 Close(); // Close the login form
@@ -33,15 +33,15 @@ namespace Inventory_Hall
 
             else
             {
-                if (usuariotxt.Text != "steven" && maskedcon.Text != "0785")
+                if (usuariotxt.Text != "jesus" && maskedcon.Text != "2020")
                 {
                     MessageBox.Show("El usuario y la contraseña son incorrectas");
                 }
-                else if (usuariotxt.Text != "steven")
+                else if (usuariotxt.Text != "jesus")
                 {
                     MessageBox.Show("El usuario es incorrecto");
                 }
-                else if (maskedcon.Text != "0785")
+                else if (maskedcon.Text != "2020")
                 {
                     MessageBox.Show("La contraseña es incorrecta");
                 }
